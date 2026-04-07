@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obsession Arc Framework</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <!-- Row 1: Logo + Title (centered), clocks (right) -->
+  <div class="top-nav-header">
+    <div class="top-brand-stack" data-switch-app="home" role="button" tabindex="0" aria-label="Go to home page" title="Go to Home">
+      <img class="top-logo-mark" src="oa-logo.png" alt="OA">
+      <div class="top-brand-text">
+        <span class="top-nav-brand">Obsession Arc</span>
+        <div class="top-nav-subbrand">REDEFINED STRUCTURE</div>
+      </div>
+    </div>
+    <div class="top-nav-right">
+      <span class="live-dot"></span>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:1px;">
+          <span style="font-size:9px;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;">NY</span>
+          <span class="clock-chip" id="top-clock">--:--:--</span>
+        </div>
+        <div style="width:1px;height:28px;background:var(--border);"></div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:1px;">
+          <span style="font-size:9px;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;">IST</span>
+          <span class="clock-chip" id="top-clock-ist">--:--:--</span>
+        </div>
+      </div>
+      <span id="top-alert-dot" class="notif-dot" style="display:none;"></span>
+    </div>
+  </div>
+  <!-- Row 2: Tabs centered -->
+  <div class="top-nav-tabs">
+    <button class="top-tab active" id="topTab-home" data-switch-app="home">Home</button>
+    <button class="top-tab" id="topTab-rth" data-switch-app="rth">RTH Decision Engine</button>
+    <button class="top-tab" id="topTab-h1" data-switch-app="h1">H1 Pattern</button>
+    <button class="top-tab" id="topTab-risk" data-switch-app="risk">Risk Management</button>
+    <button class="top-tab" id="topTab-sdrange" data-switch-app="sdrange">SDRange+ Framework</button>
+    <button class="top-tab" id="topTab-victory" data-switch-app="victory">Victory Unit</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     VIEW 0: HOME
+══════════════════════════════════════ -->
+<div class="app-view active" id="view-home">
+  <div class="container">
+    <section class="browser-home" aria-label="Home hero">
+      <p class="browser-kicker">A focused operating system for futures traders</p>
+      <h1 class="browser-title">THIS FRAMEWORK HELPS YOU TRADE WITH LESS NOISE AND MORE PRECISION.</h1>
+      <p class="browser-subtitle">
+        One calm interface for bias, timing, and risk. backed by 20 Years of backtested Data and built for fast decision-making.
+      </p>
+      <div class="browser-actions">
+        <button class="browser-btn browser-btn-primary" type="button" data-switch-app="rth">Open RTH Engine</button>
+        <button class="browser-btn" type="button" data-switch-app="h1">Open H1 Pattern</button>
+        <button class="browser-btn" type="button" data-switch-app="risk">Risk Management</button>
+        <button type="button" class="browser-link" data-switch-app="sdrange">SDRange+ Framework</button>
+        <button type="button" class="browser-link" data-switch-app="victory">Victory Unit</button>
+      </div>
+
+      <div class="browser-stage" aria-label="Platform preview">
+        <div class="bw-shell">
+          <div class="bw-top">
+            <div class="bw-dots"><span></span><span></span><span></span></div>
+            <div class="bw-address">obsessionarc.app / command-center</div>
+          </div>
+          <div class="bw-body">
+            <article class="bw-card">
+              <div class="bw-label">RTH Decision Engine</div>
+              <h3>Directional Structure</h3>
+              <p>Multi-session context with clean sequence probability and execution framing.</p>
+            </article>
+            <article class="bw-card">
+              <div class="bw-label">H1 Pattern</div>
+              <h3>Time-Based Entry Logic</h3>
+              <p>High-probability trigger windows, DOL timing, and trade window discipline.</p>
+            </article>
+            <article class="bw-card">
+              <div class="bw-label">Risk Management</div>
+              <h3>Position Size + P&amp;L</h3>
+              <p>Quick view matrix, contract specs, and simulator in one control panel.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="testimonials-float" aria-label="Client testimonials">
+      <div class="testimonials-title">Testimonials</div>
+      <div class="testimonials-marquee" role="presentation">
+        <div class="testimonials-track">
+          <article class="t-card"><div class="t-quote">“Clean framework. My execution got way more disciplined.”</div><div class="t-name">Ahem</div></article>
+          <article class="t-card"><div class="t-quote">“RTH engine is insanely practical for daily bias.”</div><div class="t-name">Brandon</div></article>
+          <article class="t-card"><div class="t-quote">“H1 timing filter helped me avoid low-quality entries.”</div><div class="t-name">Tsung</div></article>
+          <article class="t-card"><div class="t-quote">“The risk panel saved me from over-sizing multiple times.”</div><div class="t-name">Rupam</div></article>
+          <article class="t-card"><div class="t-quote">“Very clear visual structure. Fast decisions, less noise.”</div><div class="t-name">Chirag</div></article>
+          <article class="t-card"><div class="t-quote">“SDRange references are now part of my daily routine.”</div><div class="t-name">Mukul</div></article>
+          <article class="t-card"><div class="t-quote">“Huge improvement in consistency after using this.”</div><div class="t-name">Rupesh</div></article>
+          <article class="t-card"><div class="t-quote">“The stats + alerts combo keeps me focused during session.”</div><div class="t-name">Ahem</div></article>
+          <article class="t-card"><div class="t-quote">“Simple workflow, professional feel, great usability.”</div><div class="t-name">Brandon</div></article>
+          <article class="t-card"><div class="t-quote">“Best part is all modules are in one place.”</div><div class="t-name">Tsung</div></article>
+          <article class="t-card"><div class="t-quote">“Time-based rules reduced my emotional holding.”</div><div class="t-name">Rupam</div></article>
+          <article class="t-card"><div class="t-quote">“I finally have a repeatable pre-trade checklist.”</div><div class="t-name">Chirag</div></article>
+
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“Clean framework. My execution got way more disciplined.”</div><div class="t-name">Ahem</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“RTH engine is insanely practical for daily bias.”</div><div class="t-name">Brandon</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“H1 timing filter helped me avoid low-quality entries.”</div><div class="t-name">Tsung</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“The risk panel saved me from over-sizing multiple times.”</div><div class="t-name">Rupam</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“Very clear visual structure. Fast decisions, less noise.”</div><div class="t-name">Chirag</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“SDRange references are now part of my daily routine.”</div><div class="t-name">Mukul</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“Huge improvement in consistency after using this.”</div><div class="t-name">Rupesh</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“The stats + alerts combo keeps me focused during session.”</div><div class="t-name">Ahem</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“Simple workflow, professional feel, great usability.”</div><div class="t-name">Brandon</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“Best part is all modules are in one place.”</div><div class="t-name">Tsung</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“Time-based rules reduced my emotional holding.”</div><div class="t-name">Rupam</div></article>
+          <article class="t-card" aria-hidden="true"><div class="t-quote">“I finally have a repeatable pre-trade checklist.”</div><div class="t-name">Chirag</div></article>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="payout-float" aria-label="Payout certificates">
+      <div class="payout-title">Payout Certificates</div>
+      <div class="payout-marquee" role="presentation">
+        <div class="payout-track" id="payout-track"></div>
+      </div>
+    </aside>
+
+    <section class="links-hub card" aria-label="Community and links">
+      <div class="links-hub-inner">
+        <div class="section-tag">Community & Resources</div>
+        <h2 class="links-title">Stay Connected</h2>
+        <p class="links-subtitle">Join the community, access your in-house tools, and follow updates across your social channels.</p>
+
+        <div class="links-grid">
+          <a class="link-pill" href="https://discord.gg/mFryr7HUVR" target="_blank" rel="noopener noreferrer">
+            <img class="link-icon" src="https://cdn.simpleicons.org/discord/5865F2" alt="Discord logo">
+            <span>Discord Server</span>
+          </a>
+          <a class="link-pill" href="https://in.tradingview.com/script/xpW4rQCP-Obsession-Arc-Tool-kit-Pro/" target="_blank" rel="noopener noreferrer">
+            <img class="link-icon" src="https://cdn.simpleicons.org/tradingview/089981" alt="TradingView logo">
+            <span>In-House Indicators</span>
+          </a>
+          <a class="link-pill" href="https://x.com/aanshumanSingh_" target="_blank" rel="noopener noreferrer">
+            <img class="link-icon" src="https://cdn.simpleicons.org/x/ffffff" alt="X logo">
+            <span>X / Twitter</span>
+          </a>
+          <a class="link-pill" href="https://www.instagram.com/aanshuman.eth?igsh=MXQ4bTM5d2V5eG1tcQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+            <img class="link-icon" src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram logo">
+            <span>Instagram</span>
+          </a>
+          <a class="link-pill" href="https://www.youtube.com/@aanshumanfx" target="_blank" rel="noopener noreferrer">
+            <img class="link-icon" src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube logo">
+            <span>YouTube</span>
+          </a>
+          <a class="link-pill" href="mailto:aanshuman.fx@gmail.com">
+            <img class="link-icon" src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail logo">
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div><!-- /view-home -->
+
+<!-- ══════════════════════════════════════
+     VIEW 1: H1 PATTERN DASHBOARD
+══════════════════════════════════════ -->
+<div class="app-view" id="view-h1">
+
+  <!-- Inner bottom nav for H1 sections -->
+  <div style="position:sticky;top:49px;z-index:150;background:var(--bg0);border-bottom:1px solid var(--border);display:flex;">
+    <button class="h1-tab active" id="h1nav-live"   data-show-h1="live"  style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">📡 Live</button>
+    <button class="h1-tab"        id="h1nav-hours"  data-show-h1="hours" style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">🕐 Hours</button>
+    <button class="h1-tab"        id="h1nav-stops"  data-show-h1="stops" style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">🛡 Stops</button>
+    <button class="h1-tab"        id="h1nav-dol"    data-show-h1="dol"   style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">⏱ DOL</button>
+  </div>
+
+  <div class="container" style="max-width:860px;">
+
+    <!-- LIVE PAGE -->
+    <div class="h1-tab-panel active" id="h1p-live">
+
+      <div style="text-align:center;padding:18px 0 6px;">
+        <div class="section-tag section-tag-inline"><img class="oa-logo-inline" src="oa-logo.png" alt="OA">Obsession Arc Framework · H1 Pattern</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:4px;letter-spacing:0.5px;">Live Trade Window Monitor · NQ Futures</div>
+      </div>
+
+      <div class="h1-grid-2" style="margin-bottom:14px;">
+        <!-- Clock card -->
+        <div class="h1-card">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:12px;">
+            <span class="live-dot"></span>
+            <span class="label" style="margin:0;">Live Clock</span>
+          </div>
+          <!-- NY + IST side by side -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px;">
+            <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;">
+              <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+                <span style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);font-weight:700;">🇺🇸 New York</span>
+              </div>
+              <div class="val-xl" id="h1-clock" style="font-size:28px;">--:--:--</div>
+              <div style="font-size:10px;color:var(--text3);margin-top:3px;letter-spacing:0.5px;">EST / EDT</div>
+            </div>
+            <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;">
+              <div style="display:flex;align-items:center;gap:6px;margin-bottom:4px;">
+                <span style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);font-weight:700;">🇮🇳 India</span>
+              </div>
+              <div class="val-xl" id="h1-clock-ist" style="font-size:28px;color:var(--amber);">--:--:--</div>
+              <div style="font-size:10px;color:var(--text3);margin-top:3px;letter-spacing:0.5px;">IST (UTC+5:30)</div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px;">
+            <div><div class="label">Trigger hour</div><div class="val-md" id="h1-trigger">--:00</div></div>
+            <div><div class="label">Trade window</div><div class="val-md" id="h1-window">--:--</div></div>
+          </div>
+          <div style="margin-top:12px;">
+            <div class="label">Hour progress</div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:4px;">
+              <div class="pbar" style="flex:1;"><div class="pbar-fill" id="h1-hrprog" style="background:var(--green);width:0%;"></div></div>
+              <span style="font-size:11px;color:var(--text3);" id="h1-minsleft">60m</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status card -->
+        <div class="h1-card">
+          <div class="label">Current trade window</div>
+          <div style="margin:6px 0;" id="h1-cbadge"></div>
+          <div class="val-lg" id="h1-cwr" style="margin-bottom:6px;">--%</div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.7;" id="h1-cdetail"></div>
+          <div class="divider"></div>
+          <div class="label">Elapsed this hour</div>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px;">
+            <div class="val-md" id="h1-elapsed">0:00</div>
+            <div id="h1-action-badge"></div>
+          </div>
+          <div class="pbar" style="margin-top:6px;"><div class="pbar-fill" id="h1-minprog" style="width:0%;"></div></div>
+          <div style="margin-top:10px;">
+            <div class="label">DOL probability</div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:4px;">
+              <div class="pbar pbar-lg" style="flex:1;"><div class="pbar-fill" id="h1-dolbar" style="width:0%;"></div></div>
+              <span style="font-size:13px;font-weight:700;min-width:40px;text-align:right;" id="h1-dolval">--%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alerts -->
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+          <div class="section-tag" style="margin:0;">Live Alerts</div>
+          <span style="font-size:11px;color:var(--text3);" id="h1-alertcount"></span>
+        </div>
+        <div id="h1-alerts"></div>
+      </div>
+
+      <!-- Time stops -->
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:10px;">Time-based exit rules</div>
+        <div class="tstop-grid" id="h1-tstops">
+          <div class="tstop-pill"><div style="font-size:14px;font-weight:700;">:10</div><div style="font-size:10px;color:var(--text3);margin-top:2px;">45% left</div><div style="font-size:10px;color:var(--amber);margin-top:3px;">Consider scratch</div></div>
+          <div class="tstop-pill"><div style="font-size:14px;font-weight:700;">:15</div><div style="font-size:10px;color:var(--text3);margin-top:2px;">39% left</div><div style="font-size:10px;color:var(--red);margin-top:3px;">Strong exit</div></div>
+          <div class="tstop-pill"><div style="font-size:14px;font-weight:700;">:30</div><div style="font-size:10px;color:var(--text3);margin-top:2px;">23% left</div><div style="font-size:10px;color:var(--red);margin-top:3px;">Should be out</div></div>
+          <div class="tstop-pill"><div style="font-size:14px;font-weight:700;">:45</div><div style="font-size:10px;color:var(--text3);margin-top:2px;">10% left</div><div style="font-size:10px;color:var(--red);margin-top:3px;">Dead trade</div></div>
+        </div>
+      </div>
+
+      <div class="h1-card" style="margin-bottom:14px;background:var(--cyan-dim);border-color:var(--cyan-border);">
+        <div class="label" style="margin-bottom:8px;color:var(--text1);">Quick View Tip</div>
+        <div style="font-size:12px;color:var(--text1);line-height:1.8;">
+          Whenever a low of the candle is created in the last 15 minutes before candle close, that low becomes a very high-probability Draw on Liquidity target in the next hour, following a specific structure.
+        </div>
+      </div>
+
+      <!-- DOW -->
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:10px;">Day of week</div>
+        <div class="dow-grid" id="h1-dow"></div>
+      </div>
+
+      <!-- Summary -->
+      <div class="h1-card">
+        <div class="label" style="margin-bottom:10px;">5-Year summary (Dec 2020 – Dec 2025)</div>
+        <div class="h1-stats-grid">
+          <div class="h1-stat"><div class="label">Trades</div><div class="val-md">26,706</div></div>
+          <div class="h1-stat"><div class="label">Cont. WR</div><div class="val-md" style="color:var(--green);">73.0%</div></div>
+          <div class="h1-stat"><div class="label">Rev. WR</div><div class="val-md" style="color:var(--amber);">61.8%</div></div>
+          <div class="h1-stat"><div class="label">Avg DOL</div><div class="val-md">:09</div></div>
+          <div class="h1-stat"><div class="label">Med. Adverse</div><div class="val-md">4.2 pts</div></div>
+          <div class="h1-stat"><div class="label">Sundays</div><div class="val-md">Excluded</div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HOURS PAGE -->
+    <div class="h1-tab-panel" id="h1p-hours">
+      <div style="text-align:center;padding:18px 0 6px;">
+        <div class="section-tag section-tag-inline"><img class="oa-logo-inline" src="oa-logo.png" alt="OA">Obsession Arc Framework · H1 Pattern</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:4px;letter-spacing:0.5px;">Hourly Win Rate Analysis · NQ Futures</div>
+      </div>
+      <div class="h1-card">
+        <div class="label" style="margin-bottom:4px;">Trigger hours — continuation patterns only</div>
+        <div style="display:flex;gap:14px;font-size:10px;color:var(--text3);margin-bottom:12px;">
+          <span style="color:var(--green);">★ A+ (≥78%)</span>
+          <span style="color:var(--amber);">△ Below avg</span>
+          <span style="color:var(--red);">✕ Avoid</span>
+        </div>
+        <div id="h1-hourslist"></div>
+      </div>
+    </div>
+
+    <!-- STOPS PAGE -->
+    <div class="h1-tab-panel" id="h1p-stops">
+      <div style="text-align:center;padding:18px 0 6px;">
+        <div class="section-tag section-tag-inline"><img class="oa-logo-inline" src="oa-logo.png" alt="OA">Obsession Arc Framework · H1 Pattern</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:4px;letter-spacing:0.5px;">Stop Loss & Excursion Data · NQ Futures</div>
+      </div>
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:10px;">Stop loss guidance</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+          <div class="tstop-pill"><div style="font-size:16px;font-weight:700;">10 pt</div><div style="font-size:11px;color:var(--text2);margin-top:3px;">catches 74% of winners</div></div>
+          <div class="tstop-pill"><div style="font-size:16px;font-weight:700;">15 pt</div><div style="font-size:11px;color:var(--text2);margin-top:3px;">catches 84% of winners</div></div>
+          <div class="tstop-pill"><div style="font-size:16px;font-weight:700;">22 pt</div><div style="font-size:11px;color:var(--text2);margin-top:3px;">catches 90% of winners</div></div>
+          <div class="tstop-pill"><div style="font-size:16px;font-weight:700;">33 pt</div><div style="font-size:11px;color:var(--text2);margin-top:3px;">catches 95% of winners</div></div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="label" style="margin-bottom:10px;">Stop loss calculator</div>
+        <div class="calc-row">
+          <input type="number" id="h1-entry" placeholder="Entry price" data-oninput="h1CalcStops">
+          <select id="h1-dir" data-onchange="h1CalcStops">
+            <option value="long">Long</option>
+            <option value="short">Short</option>
+          </select>
+        </div>
+        <div id="h1-stopresults" style="margin-top:12px;"></div>
+
+        <div class="divider"></div>
+        <div class="label" style="margin-bottom:10px;">Adverse excursion (before DOL hit)</div>
+        <div class="h1-stats-grid">
+          <div class="h1-stat"><div class="label">Median</div><div class="val-md">4.2 pt</div></div>
+          <div class="h1-stat"><div class="label">Mean</div><div class="val-md">8.9 pt</div></div>
+          <div class="h1-stat"><div class="label">75th %ile</div><div class="val-md">10.2 pt</div></div>
+          <div class="h1-stat"><div class="label">90th %ile</div><div class="val-md">21.8 pt</div></div>
+          <div class="h1-stat"><div class="label">95th %ile</div><div class="val-md">32.5 pt</div></div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="label" style="margin-bottom:10px;">Retracement distribution (winners)</div>
+        <div id="h1-retrace"></div>
+      </div>
+    </div>
+
+    <!-- DOL PAGE -->
+    <div class="h1-tab-panel" id="h1p-dol">
+      <div style="text-align:center;padding:18px 0 6px;">
+        <div class="section-tag section-tag-inline"><img class="oa-logo-inline" src="oa-logo.png" alt="OA">Obsession Arc Framework · H1 Pattern</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:4px;letter-spacing:0.5px;">Direction of Liquidity Timing Data · NQ Futures</div>
+      </div>
+      <div class="h1-card">
+        <div class="label" style="margin-bottom:10px;">DOL timing — cumulative %</div>
+        <div id="h1-dolcumul"></div>
+
+        <div class="divider"></div>
+        <div class="label" style="margin-bottom:6px;">Time-based success rate</div>
+        <div style="font-size:11px;color:var(--text3);margin-bottom:10px;">If X minutes pass without DOL hit, probability it eventually fills:</div>
+        <div id="h1-timecutoff"></div>
+
+        <div class="divider"></div>
+        <div class="label" style="margin-bottom:10px;">TDO position filter</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;">
+          <div class="h1-stat"><div class="label">Longs above TDO</div><div class="val-md" style="color:var(--green);">74.1%</div></div>
+          <div class="h1-stat"><div class="label">Longs below TDO</div><div class="val-md">72.2%</div></div>
+          <div class="h1-stat"><div class="label">Shorts above TDO</div><div class="val-md">71.4%</div></div>
+          <div class="h1-stat"><div class="label">Shorts below TDO</div><div class="val-md">72.2%</div></div>
+        </div>
+        <div style="font-size:11px;color:var(--text3);margin-top:10px;line-height:1.6;">Longs above TDO get +2% edge. Shorts are consistent regardless of TDO position.</div>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+</div><!-- /view-h1 -->
+
+
+<!-- ══════════════════════════════════════
+     VIEW 2: RTH DECISION ENGINE
+══════════════════════════════════════ -->
+<div class="app-view" id="view-rth">
+  <div class="container">
+
+    <div class="rth-header">
+      <div class="section-tag section-tag-inline"><img class="oa-logo-inline" src="oa-logo.png" alt="OA">Obsession Arc Framework · NQ Futures</div>
+      <h2>PD RTH Range <span>Decision Engine</span></h2>
+      <p>IF-THEN sequence logic backed by historical NQ data</p>
+      <div class="pd-badge">Obsession Arc Framework · PD RTH Range = Previous Day's Regular Trading Hours (9:30 AM – 4:15 PM ET)</div>
+    </div>
+
+    <div class="steps-bar">
+      <div class="step-dot active" id="rth-dot1"></div>
+      <div class="step-dot"        id="rth-dot2"></div>
+      <div class="step-dot"        id="rth-dot3"></div>
+    </div>
+
+    <div class="indicator-link-box">
+      <div class="indicator-link-text">
+        <span class="indicator-link-label">Indicator</span>
+        <span class="indicator-link-title">Obsession arc Tool For auto Plotting RTH and 6-9 Levels</span>
+      </div>
+      <a class="indicator-link-btn" href="https://in.tradingview.com/script/o1k1vd8K-69mean/" target="_blank" rel="noopener noreferrer">
+        Open on TradingView
+      </a>
+    </div>
+
+    <!-- Framework Documentation -->
+    <div style="margin-bottom:28px;">
+      <button data-action="toggle-rth-docs" id="rth-docs-btn" style="
+        width:100%;display:flex;align-items:center;justify-content:space-between;
+        background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);
+        padding:12px 18px;cursor:pointer;font-family:var(--font);color:var(--text2);
+        font-size:11px;letter-spacing:1.5px;text-transform:uppercase;transition:all 0.2s;
+      ">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:14px;">📖</span>
+          <span>Framework Guide — PD RTH Range+</span>
+        </div>
+        <span id="rth-docs-arrow" style="font-size:14px;transition:transform 0.3s;">▼</span>
+      </button>
+
+      <div id="rth-docs-panel" style="display:none;margin-top:2px;">
+
+        <!-- Intro -->
+        <div class="h1-card" style="margin-bottom:10px;border-top-left-radius:0;border-top-right-radius:0;border-top:none;">
+          <div class="label" style="margin-bottom:8px;">Introduction</div>
+          <p style="font-size:12px;color:var(--text2);line-height:1.8;">
+            The <strong style="color:var(--cyan);">PD RTH Range+</strong> is a framework designed to visualize and track previous day's Regular Trading Hours (RTH) ranges for futures markets. It identifies key price levels established during standard US trading hours <strong>(9:30 AM – 4:15 PM ET)</strong> and Globex hours, helping traders identify important levels and fair value zones.
+          </p>
+          <p style="font-size:12px;color:var(--text2);line-height:1.8;margin-top:8px;">
+            This framework is built around <strong style="color:var(--cyan);">IF-THEN sequence logic</strong> — backed by historical NQ data — to generate your daily directional bias.
+          </p>
+        </div>
+
+        <!-- Range Modes -->
+        <div class="h1-card" style="margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <span style="font-size:16px;">📊</span>
+            <div class="label" style="margin:0;color:var(--cyan);">Range Functions & Plot Modes</div>
+          </div>
+          <p style="font-size:12px;color:var(--text2);line-height:1.8;">
+            The tool operates with two modes: <strong style="color:var(--text1);">"RTH" Range</strong> and <strong style="color:var(--text1);">"Previous Day" Range</strong>. These help you visualize the previous day's points of interest and swing high/low — framing the current day's candle in relation to both the RTH range and the full previous day range.
+          </p>
+        </div>
+
+        <!-- Projections -->
+        <div class="h1-card" style="margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <span style="font-size:16px;">🎯</span>
+            <div class="label" style="margin:0;color:var(--cyan);">Projections Feature</div>
+          </div>
+          <p style="font-size:12px;color:var(--text2);line-height:1.8;">
+            The projection feature has two plot modes: <strong style="color:var(--text1);">"Fixed"</strong> and <strong style="color:var(--text1);">"Custom"</strong>. The Fixed mode uses the <strong style="color:var(--amber);">Rule of Thirds</strong> with two key zones:
+          </p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;">
+            <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;">
+              <div style="font-size:13px;font-weight:700;color:var(--green);">0.33 – 0.66</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:3px;">First deviation zone. Price often stalls and retraces back into range from here.</div>
+            </div>
+            <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;">
+              <div style="font-size:13px;font-weight:700;color:var(--red);">1.33 – 1.66</div>
+              <div style="font-size:11px;color:var(--text3);margin-top:3px;">Extended deviation zone. Price exhausts above/below range at these levels.</div>
+            </div>
+          </div>
+          <div style="margin-top:10px;padding:10px 12px;background:var(--cyan-dim);border:1px solid var(--cyan-border);border-radius:var(--radius);">
+            <div style="font-size:11px;color:var(--cyan);font-weight:600;">⚡ Actionable Areas</div>
+            <div style="font-size:11px;color:var(--text2);margin-top:4px;line-height:1.6;">These projection zones are where you expect price to lose momentum and retrace back into the range — your entry triggers for retracements and reversals.</div>
+          </div>
+        </div>
+
+        <!-- Premium & Discount -->
+        <div class="h1-card" style="margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <span style="font-size:16px;">⚖</span>
+            <div class="label" style="margin:0;color:var(--cyan);">Dynamic Premium & Discount</div>
+          </div>
+          <p style="font-size:12px;color:var(--text2);line-height:1.8;">
+            Dynamically identifies fair value and equilibrium at current price — updating until projections or levels are met and a swing high/low has formed.
+          </p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;">
+            <div style="background:var(--red-dim);border:1px solid rgba(239,68,68,0.25);border-radius:var(--radius);padding:8px;text-align:center;">
+              <div style="font-size:11px;font-weight:700;color:var(--red);">PREMIUM</div>
+              <div style="font-size:10px;color:var(--text3);margin-top:2px;">Above EQ</div>
+            </div>
+            <div style="background:var(--cyan-dim);border:1px solid var(--cyan-border);border-radius:var(--radius);padding:8px;text-align:center;">
+              <div style="font-size:11px;font-weight:700;color:var(--cyan);">EQUILIBRIUM</div>
+              <div style="font-size:10px;color:var(--text3);margin-top:2px;">Fair Value</div>
+            </div>
+            <div style="background:var(--green-dim);border:1px solid var(--green-border);border-radius:var(--radius);padding:8px;text-align:center;">
+              <div style="font-size:11px;font-weight:700;color:var(--green);">DISCOUNT</div>
+              <div style="font-size:10px;color:var(--text3);margin-top:2px;">Below EQ</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trading Sequences -->
+        <div class="h1-card" style="margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <span style="font-size:16px;">🔁</span>
+            <div class="label" style="margin:0;color:var(--cyan);">Trading Range Sequences</div>
+          </div>
+          <p style="font-size:12px;color:var(--text2);line-height:1.8;margin-bottom:12px;">
+            The framework generates your daily bias by following IF-THEN sequences. These are data-backed by statistics and form the core logic of the Decision Engine above.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <div style="background:var(--bg2);border:1px solid var(--green-border);border-radius:var(--radius);padding:9px 12px;display:flex;align-items:center;gap:10px;">
+              <span style="font-size:11px;font-weight:700;color:var(--green);min-width:60px;">EQ → High</span>
+              <span style="font-size:10px;color:var(--text3);">EQ hit first → High is next probable target (~52–57%)</span>
+            </div>
+            <div style="background:var(--bg2);border:1px solid var(--green-border);border-radius:var(--radius);padding:9px 12px;display:flex;align-items:center;gap:10px;">
+              <span style="font-size:11px;font-weight:700;color:var(--green);min-width:60px;">EQ → Low</span>
+              <span style="font-size:10px;color:var(--text3);">EQ hit first → Low is next probable target (~75%)</span>
+            </div>
+            <div style="background:var(--bg2);border:1px solid var(--cyan-border);border-radius:var(--radius);padding:9px 12px;display:flex;align-items:center;gap:10px;">
+              <span style="font-size:11px;font-weight:700;color:var(--cyan);min-width:60px;">High → EQ</span>
+              <span style="font-size:10px;color:var(--text3);">PD High tagged → EQ is next target (~89–91%). Strongest mean reversion setup.</span>
+            </div>
+            <div style="background:var(--bg2);border:1px solid var(--cyan-border);border-radius:var(--radius);padding:9px 12px;display:flex;align-items:center;gap:10px;">
+              <span style="font-size:11px;font-weight:700;color:var(--cyan);min-width:60px;">Low → EQ</span>
+              <span style="font-size:10px;color:var(--text3);">PD Low tagged → EQ is next target (~89–94%). Highest edge in the dataset.</span>
+            </div>
+            <div style="background:var(--bg2);border:1px solid var(--amber-dim);border-radius:var(--radius);padding:9px 12px;display:flex;align-items:center;gap:10px;">
+              <span style="font-size:11px;font-weight:700;color:var(--amber);min-width:60px;">→ Projection</span>
+              <span style="font-size:10px;color:var(--text3);">EQ → Fixed Projections (0.33–0.66 / 1.33–1.66) or Projections → EQ reversal</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Retracements & Reversals -->
+        <div class="h1-card" style="margin-bottom:10px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <span style="font-size:16px;">↩</span>
+            <div class="label" style="margin:0;color:var(--cyan);">Retracements vs Reversals</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+            <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px;">
+              <div style="font-size:11px;font-weight:700;color:var(--green);margin-bottom:6px;">📉 RETRACEMENTS</div>
+              <div style="font-size:11px;color:var(--text2);line-height:1.6;">Taken from projection zones back to <strong>Equilibrium</strong>. Participate in the move to fair value from the deviation of the range.</div>
+            </div>
+            <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px;">
+              <div style="font-size:11px;font-weight:700;color:var(--red);margin-bottom:6px;">🔄 REVERSALS</div>
+              <div style="font-size:11px;color:var(--text2);line-height:1.6;">Taken from projection zones all the way to opposing range levels — <strong>EQ or High/Low</strong>.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ETH Note -->
+        <div class="h1-card">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <span style="font-size:16px;">🕯</span>
+            <div class="label" style="margin:0;color:var(--cyan);">ETH Candle Transparency</div>
+          </div>
+          <p style="font-size:12px;color:var(--text2);line-height:1.8;">
+            Electronic Trading Hours (ETH) candles outside of <strong>9:30 AM – 4:15 PM ET</strong> are displayed with reduced opacity on the indicator, helping you focus on RTH price action — which is the core basis for the framework's trading day.
+          </p>
+          <div style="margin-top:8px;font-size:11px;color:var(--text3);display:flex;gap:16px;flex-wrap:wrap;">
+            <span style="color:var(--red);">◼ 4:15 PM — RTH Close</span>
+            <span style="color:var(--green);">◼ 9:30 AM — RTH Open</span>
+            <span>Outside these = ETH (lower opacity)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="rth-panel active" id="rth-panel1">
+      <div class="panel-label">Step 1 of 2</div>
+      <div class="panel-question">Which PD RTH level was hit first today?</div>
+      <p style="font-size:12px;color:var(--text2);margin-bottom:20px;text-align:center;">Select one of the following:</p>
+      <div class="options-grid">
+        <div class="option-btn" data-rth-level="EQ">
+          <span class="opt-icon">⚖</span>
+          <div class="opt-label">Equilibrium (EQ)</div>
+          <div class="opt-desc">Price touched the midpoint of previous day's RTH range first</div>
+        </div>
+        <div class="option-btn" data-rth-level="High">
+          <span class="opt-icon">▲</span>
+          <div class="opt-label">PD RTH High</div>
+          <div class="opt-desc">Price touched the previous day's RTH high first</div>
+        </div>
+        <div class="option-btn" data-rth-level="Low">
+          <span class="opt-icon">▼</span>
+          <div class="opt-label">PD RTH Low</div>
+          <div class="opt-desc">Price touched the previous day's RTH low first</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="rth-panel" id="rth-panel2">
+      <div class="panel-label">Step 2 of 2</div>
+      <div class="panel-question">During which session was it hit?</div>
+      <p style="font-size:12px;color:var(--text2);margin-bottom:20px;text-align:center;">Select one of the following:</p>
+      <div class="options-grid">
+        <div class="option-btn" data-rth-session="asia">
+          <span class="opt-icon">🌏</span>
+          <div class="opt-label">Asia Session</div>
+          <div class="opt-desc">Globex overnight / Asia hours</div>
+        </div>
+        <div class="option-btn" data-rth-session="london">
+          <span class="opt-icon">🌍</span>
+          <div class="opt-label">London Session</div>
+          <div class="opt-desc">European / London open hours</div>
+        </div>
+        <div class="option-btn" data-rth-session="any">
+          <span class="opt-icon">◎</span>
+          <div class="opt-label">Core (No Session Filter)</div>
+          <div class="opt-desc">Core sequences without session filter</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: Results -->
+    <div class="rth-panel" id="rth-panel3">
+      <div class="results-header">
+        <div class="breadcrumb" id="rth-bc"></div>
+        <button class="reset-btn" data-action="rth-reset">↺ Reset</button>
+      </div>
+      <div class="sequences-list" id="rth-seqlist"></div>
+      <div class="insight-box" id="rth-insight">
+        <div class="insight-label">▸ Key Insight</div>
+        <p id="rth-insighttext"></p>
+      </div>
+      <div class="rth-legend">
+        <div class="legend-item"><div class="legend-dot a"></div>A-Tier: 85%+</div>
+        <div class="legend-item"><div class="legend-dot b"></div>B-Tier: 70–84%</div>
+        <div class="legend-item"><div class="legend-dot c"></div>C-Tier: &lt;70%</div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /view-rth -->
+
+
+<!-- ══════════════════════════════════════
+     VIEW 3: RISK MANAGEMENT CALCULATOR
+══════════════════════════════════════ -->
+<div class="app-view" id="view-risk">
+  <div class="container" style="max-width:900px;">
+
+    <div class="risk-header">
+      <div class="section-tag section-tag-inline"><img class="oa-logo-inline" src="oa-logo.png" alt="OA">Obsession Arc Framework · Risk Management</div>
+      <h2>Contract Size & <span>Risk Calculator</span></h2>
+      <p>Position sizing, dollar risk, P&L, and contract specs for NQ, MNQ, ES, MES, YM, GC, MGC & 6E</p>
+    </div>
+
+    <!-- Sub-tab bar -->
+    <div class="risk-tab-bar">
+      <button class="risk-tab active" id="rtab-quick" data-risk-tab="quick">⚡ Quick View</button>
+      <button class="risk-tab" id="rtab-calc" data-risk-tab="calc">📐 Calculator</button>
+      <button class="risk-tab" id="rtab-specs" data-risk-tab="specs">📋 Contract Specs</button>
+      <button class="risk-tab" id="rtab-pnl"  data-risk-tab="pnl">📊 P&L Simulator</button>
+    </div>
+
+    <!-- ── TAB 1: MAIN CALCULATOR ── -->
+    <div class="risk-tab-panel" id="rtp-calc">
+
+      <!-- Instrument selector -->
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:10px;">Select Instrument</div>
+        <div class="risk-instrument-grid" id="risk-inst-grid"></div>
+        <div id="risk-inst-info" style="font-size:11px;color:var(--text2);line-height:1.6;margin-top:8px;padding:10px 12px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);display:none;"></div>
+      </div>
+
+      <!-- Inputs -->
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:12px;">Trade Parameters</div>
+        <div class="risk-input-grid">
+          <div class="risk-field">
+            <label>Account Size ($)</label>
+            <input type="number" id="r-account" placeholder="e.g. 50000" data-oninput="riskCalc" value="25000">
+          </div>
+          <div class="risk-field">
+            <label>Risk Per Trade (%)</label>
+            <input type="number" id="r-riskpct" placeholder="e.g. 1" step="0.1" data-oninput="riskCalc" value="1">
+            <span class="field-hint">Recommended: 0.5% – 2% per trade</span>
+          </div>
+          <div class="risk-field">
+            <label>Entry Price</label>
+            <input type="number" id="r-entry" placeholder="e.g. 21500" data-oninput="riskCalc">
+          </div>
+          <div class="risk-field">
+            <label>Stop Loss Price</label>
+            <input type="number" id="r-stop" placeholder="e.g. 21490" data-oninput="riskCalc">
+          </div>
+          <div class="risk-field">
+            <label>Target Price (optional)</label>
+            <input type="number" id="r-target" placeholder="e.g. 21530" data-oninput="riskCalc">
+          </div>
+          <div class="risk-field">
+            <label>Direction</label>
+            <select id="r-dir" data-onchange="riskCalc">
+              <option value="long">Long</option>
+              <option value="short">Short</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div id="risk-results-area" style="display:none;">
+
+        <div class="risk-results-grid" id="risk-results-cards"></div>
+
+        <div class="h1-card" style="margin-bottom:14px;">
+          <div class="label" style="margin-bottom:10px;">Trade Breakdown</div>
+          <div id="risk-breakdown"></div>
+        </div>
+
+        <div class="h1-card" style="margin-bottom:14px;">
+          <div class="label" style="margin-bottom:6px;">Risk / Reward Ratio</div>
+          <div id="risk-rr-area"></div>
+        </div>
+
+        <div id="risk-warnings"></div>
+      </div>
+
+      <div id="risk-placeholder" class="info-box" style="margin-top:0;">
+        ← Select an instrument and fill in your trade parameters above to calculate position size and risk.
+      </div>
+    </div>
+
+    <!-- ── TAB 2: QUICK VIEW ── -->
+    <div class="risk-tab-panel active" id="rtp-quick">
+
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:12px;">Quick P&L Lookup</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;">
+          <div class="risk-field" style="flex:1;min-width:120px;">
+            <label>Instrument</label>
+            <select id="qv-inst" data-onchange="qvBuild">
+              <option value="MNQ">MNQ — Micro NQ</option>
+              <option value="NQ">NQ — E-mini NQ</option>
+              <option value="MES">MES — Micro ES</option>
+              <option value="ES">ES — E-mini S&P</option>
+              <option value="YM">YM — Dow Jones</option>
+              <option value="GC">GC — Gold</option>
+              <option value="MGC">MGC — Micro Gold</option>
+              <option value="6E">6E — Euro FX</option>
+            </select>
+          </div>
+          <div class="risk-field" style="width:110px;">
+            <label>Contracts</label>
+            <input type="number" id="qv-contracts" value="1" min="1" max="50" data-oninput="qvBuild">
+          </div>
+        </div>
+      </div>
+
+      <!-- instrument summary strip -->
+      <div id="qv-inst-strip" style="margin-bottom:14px;"></div>
+
+      <!-- the matrix table -->
+      <div class="h1-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+          <div class="label" style="margin:0;">Points → Dollar Value</div>
+          <div id="qv-headline" style="font-size:11px;color:var(--cyan);font-weight:600;"></div>
+        </div>
+        <div style="overflow-x:auto;">
+          <table id="qv-table" style="width:100%;border-collapse:collapse;font-size:12px;"></table>
+        </div>
+        <div style="margin-top:14px;font-size:10px;color:var(--text3);line-height:1.7;" id="qv-footnote"></div>
+      </div>
+
+    </div>
+    <div class="risk-tab-panel" id="rtp-specs">
+      <div class="h1-card">
+        <div class="label" style="margin-bottom:12px;">Contract Specifications — All Instruments</div>
+        <div style="overflow-x:auto;">
+          <table class="contract-spec-table" id="specs-table"></table>
+        </div>
+        <div class="info-box" style="margin-top:14px;">
+          Tick values shown in USD. Margin requirements vary by broker and market conditions. Always confirm current margins with your broker before trading.
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TAB 3: P&L SIMULATOR ── -->
+    <div class="risk-tab-panel" id="rtp-pnl">
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:12px;">Instrument & Position</div>
+        <div class="risk-input-grid">
+          <div class="risk-field">
+            <label>Instrument</label>
+            <select id="pnl-inst" data-onchange="pnlCalc">
+              <option value="">-- Select --</option>
+            </select>
+          </div>
+          <div class="risk-field">
+            <label>Number of Contracts</label>
+            <input type="number" id="pnl-contracts" placeholder="e.g. 2" min="1" data-oninput="pnlCalc" value="1">
+          </div>
+          <div class="risk-field">
+            <label>Entry Price</label>
+            <input type="number" id="pnl-entry" placeholder="Entry" data-oninput="pnlCalc">
+          </div>
+          <div class="risk-field">
+            <label>Exit Price</label>
+            <input type="number" id="pnl-exit" placeholder="Exit" data-oninput="pnlCalc">
+          </div>
+          <div class="risk-field">
+            <label>Direction</label>
+            <select id="pnl-dir" data-onchange="pnlCalc">
+              <option value="long">Long</option>
+              <option value="short">Short</option>
+            </select>
+          </div>
+          <div class="risk-field">
+            <label>Commission / Side ($)</label>
+            <input type="number" id="pnl-comm" placeholder="e.g. 2.50" step="0.01" value="2.25" data-oninput="pnlCalc">
+          </div>
+        </div>
+      </div>
+
+      <div id="pnl-results" style="display:none;">
+        <div class="risk-results-grid" id="pnl-cards"></div>
+        <div class="h1-card" style="margin-bottom:14px;">
+          <div class="label" style="margin-bottom:10px;">P&L Breakdown</div>
+          <div id="pnl-breakdown"></div>
+        </div>
+        <!-- Points table -->
+        <div class="h1-card">
+          <div class="label" style="margin-bottom:10px;">Point Value Reference (1 Contract)</div>
+          <div id="pnl-point-table"></div>
+        </div>
+      </div>
+      <div id="pnl-placeholder" class="info-box">Select instrument and enter entry/exit prices to simulate P&L.</div>
+    </div>
+
+  </div>
+</div><!-- /view-risk -->
+
+
+<!-- ══════════════════════════════════════
+     VIEW 4: SDRANGE+ FRAMEWORK
+══════════════════════════════════════ -->
+<div class="app-view" id="view-sdrange">
+  <div class="container" style="max-width:900px;">
+
+    <div style="text-align:center;padding:18px 0 6px;">
+      <div class="section-tag">SDRange+ · Framework Reference</div>
+      <div style="font-size:11px;color:var(--text3);margin-top:4px;letter-spacing:0.5px;">Overnight Session Range · Level Projections · Session Liquidity</div>
+    </div>
+
+    <div class="indicator-link-box" style="margin-bottom:14px;">
+      <div class="indicator-link-text">
+        <span class="indicator-link-label">Indicator</span>
+        <span class="indicator-link-title">Obsession arc Tool For auto Plotting RTH and 6-9 Levels</span>
+      </div>
+      <a class="indicator-link-btn" href="https://in.tradingview.com/script/o1k1vd8K-69mean/" target="_blank" rel="noopener noreferrer">
+        Open on TradingView
+      </a>
+    </div>
+
+    <!-- ── Intro Card ── -->
+    <div class="h1-card" style="margin-bottom:14px;padding:20px;">
+      <div style="display:flex;align-items:flex-start;gap:14px;">
+        <div style="flex:1;">
+          <div class="label" style="margin-bottom:6px;">Overview</div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.8;">
+            A versatile and highly customizable tool crafted for traders who rely on <span style="color:var(--cyan);">precise price levels</span> and <span style="color:var(--cyan);">time-based analysis</span>, with a special focus on the Overnight Session (ONS) range. Defaults to the critical <span style="color:var(--amber);">6:00 AM – 9:00 AM ET</span> window — a period often pivotal for setting the day's momentum before RTH commences.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Key Features Grid ── -->
+    <div class="h1-grid-2" style="margin-bottom:14px;">
+
+      <!-- Range Dynamics -->
+      <div class="h1-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <div class="badge badge-cyan">Range Dynamics</div>
+        </div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.75;margin-bottom:10px;">
+          Time-based ranges (user-defined) with projections marking <strong style="color:var(--text1);">exhaustion points</strong> and profit-taking areas of the chosen range.
+        </div>
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px;margin-bottom:8px;">
+          <div class="label" style="margin-bottom:4px;">x0.5 Projection</div>
+          <div style="font-size:11px;color:var(--red);">Exhaustion / range extension target</div>
+        </div>
+        <div style="background:var(--cyan-dim);border:1px solid var(--cyan-border);border-radius:var(--radius);padding:10px;">
+          <div class="label" style="margin-bottom:4px;">x1.33–1.66 Projections</div>
+          <div style="font-size:11px;color:var(--cyan);">Profit-taking & position-closing zone · <strong>Rule of Thirds</strong></div>
+        </div>
+      </div>
+
+      <!-- Sessions Liquidity -->
+      <div class="h1-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <div class="badge badge-green">Sessions Liquidity</div>
+        </div>
+        <div style="font-size:12px;color:var(--text2);line-height:1.75;margin-bottom:10px;">
+          Pivot sessions automatically mark the <strong style="color:var(--text1);">swing high & low</strong> of user-defined sessions (Asia, London) — where stop hunts form, creating potential reversal or take-profit levels.
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+          <div class="h1-stat" style="padding:8px;">
+            <div class="label">Asia Session</div>
+            <div style="font-size:11px;color:var(--amber);font-weight:700;">High / Low</div>
+          </div>
+          <div class="h1-stat" style="padding:8px;">
+            <div class="label">London Session</div>
+            <div style="font-size:11px;color:var(--blue);font-weight:700;">High / Low</div>
+          </div>
+        </div>
+        <div style="margin-top:8px;font-size:11px;color:var(--text3);line-height:1.6;">Pivot line <span style="color:var(--red);">deletes when tagged</span> — a triangle plots to alert you it has been tagged.</div>
+      </div>
+    </div>
+
+    <!-- ── Projection Levels Reference ── -->
+    <div class="h1-card" style="margin-bottom:14px;padding:18px;">
+      <div class="label" style="margin-bottom:12px;">Range Projection Levels · Reference</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px;">
+        <div class="h1-stat" style="border-color:rgba(239,68,68,0.35);">
+          <div class="label">x0.5</div>
+          <div style="font-size:13px;font-weight:700;color:var(--red);">Exhaustion</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:3px;">Half-range ext.</div>
+        </div>
+        <div class="h1-stat">
+          <div class="label">Range Open</div>
+          <div style="font-size:13px;font-weight:700;color:var(--green);">Level of Action</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:3px;">Reactions → projections</div>
+        </div>
+        <div class="h1-stat" style="border-color:rgba(34,211,238,0.35);">
+          <div class="label">x1.33</div>
+          <div style="font-size:13px;font-weight:700;color:var(--cyan);">Retracement Zone</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:3px;">Rule of Thirds</div>
+        </div>
+        <div class="h1-stat" style="border-color:rgba(34,211,238,0.5);">
+          <div class="label">x1.66</div>
+          <div style="font-size:13px;font-weight:700;color:var(--cyan);">Reversal Area</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:3px;">Profit-closing zone</div>
+        </div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:12px;">
+        <div style="font-size:11px;color:var(--text2);line-height:1.8;">
+          The <span style="color:var(--cyan);">1.33–1.66 projection area</span> derives from a mathematical calculation called the <strong style="color:var(--text1);">"Rule of Thirds"</strong> — where algorithms in funds set logical profit-taking and position closing, making price behave in the sense of retracing or reverting from said levels.
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Two Trade Scenarios ── -->
+    <div class="h1-card" style="margin-bottom:14px;padding:18px;">
+      <div class="label" style="margin-bottom:14px;">Two Trade Scenarios · How to Use the Framework</div>
+      <div class="h1-grid-2">
+
+        <!-- Reversal Trade -->
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <div class="badge badge-red">Reversal / Fade</div>
+          </div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.75;margin-bottom:10px;">
+            Fade the range breakout and capitalize on <strong style="color:var(--text1);">breakout failure</strong>, targeting opposing levels of the breakout direction.
+          </div>
+          <div style="font-size:11px;color:var(--text3);line-height:1.6;">
+            → Use the <span style="color:var(--cyan);">1.33–1.66 zone</span> to anticipate the reaction — whether a retracement or full reversal, it provides the move needed to capitalize.
+          </div>
+        </div>
+
+        <!-- Breakout Trade -->
+        <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+            <div class="badge badge-green">Breakout / Continuation</div>
+          </div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.75;margin-bottom:10px;">
+            Anticipate early breakouts using <strong style="color:var(--text1);">inner-range levels</strong> — Range Open or midpoint — as guidance for positioning.
+          </div>
+          <div style="font-size:11px;color:var(--text3);line-height:1.6;">
+            → <span style="color:var(--green);">Range Open</span> becomes the target after a range break when remaining un-tapped. Statistically, retracement to range open post-sweep has a <span style="color:var(--green);">very high hit %.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Range Open Rule ── -->
+    <div class="h1-card" style="margin-bottom:14px;padding:18px;">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <div class="badge badge-amber">Range Open Rule</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div>
+          <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:6px;">During the Range</div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.75;">
+            Range open often plays as a <strong style="color:var(--amber);">level of action</strong> — generating reactions that then distribute to projections.
+          </div>
+        </div>
+        <div>
+          <div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:6px;">After Range Break</div>
+          <div style="font-size:12px;color:var(--text2);line-height:1.75;">
+            Inversely, the range open becomes our <strong style="color:var(--green);">target</strong> after the range break when remaining un-tapped.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ONS Default Window ── -->
+    <div class="h1-card" style="padding:18px;">
+      <div class="label" style="margin-bottom:12px;">Default Session Window · Overnight Session (ONS)</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;">
+        <div class="h1-stat">
+          <div class="label">Window Start</div>
+          <div style="font-size:16px;font-weight:700;color:var(--cyan);">6:00 AM</div>
+          <div style="font-size:10px;color:var(--text3);">Eastern Time</div>
+        </div>
+        <div class="h1-stat">
+          <div class="label">Window End</div>
+          <div style="font-size:16px;font-weight:700;color:var(--cyan);">9:00 AM</div>
+          <div style="font-size:10px;color:var(--text3);">Eastern Time</div>
+        </div>
+        <div class="h1-stat">
+          <div class="label">Duration</div>
+          <div style="font-size:16px;font-weight:700;color:var(--amber);">3 Hours</div>
+          <div style="font-size:10px;color:var(--text3);">Pre-RTH key zone</div>
+        </div>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:10px;">
+        <div style="font-size:11px;color:var(--text3);line-height:1.7;">
+          <span style="color:var(--green);">✦</span> The tool supports fully custom session windows — adapt to any preferred time period for various trading styles and market conditions beyond the standard overnight session.
+          <br><span style="color:var(--green);">✦</span> Statistics for <span style="color:var(--cyan);">x0.5</span> and <span style="color:var(--cyan);">1.33–1.66</span> are calculated externally for the 6am–9am ET range. The projections function as points of interest to frame trades and position on the right side of the market.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /view-sdrange -->
+
+<!-- ══════════════════════════════════════
+     VIEW 5: VICTORY UNIT
+══════════════════════════════════════ -->
+<div class="app-view" id="view-victory">
+  <div class="container" style="max-width:980px;">
+    <section class="victory-wrap">
+      <div class="victory-hero-callout">TO ACTIVATE RM GUARANTEE USE CODE 'VICTORY'</div>
+      <div class="victory-head">
+        <div class="section-tag section-tag-inline">Victory Unit · RM Guarantee</div>
+        <h2>Risk Management Guarantee Program</h2>
+        <p>
+          Victory Unit will cover your risk and pay for your next prop firm evaluation.
+          If you lose an eval or funded account while still following the rules below,
+          a new eval account will be purchased for you.
+        </p>
+      </div>
+
+      <article class="victory-card">
+        <h3>Qualification Rules</h3>
+        <p class="victory-sub">Trader must follow Victory Unit's risk management rules:</p>
+        <ul class="victory-list">
+          <li>Trader cannot lose more than 15% of account drawdown on any single day.</li>
+          <li>Any individual losing position cannot exceed 5 micro contracts in size.</li>
+          <li>Trader must have purchased the evaluation using code: <strong>VICTORY</strong>.</li>
+        </ul>
+      </article>
+
+      <article class="victory-note">
+        <p><strong>Trophy Note:</strong> There is no cost to sign up for this service. The risk management guarantee is free, but to qualify you must use code <strong>VICTORY</strong> at a qualified prop firm. This is verified.</p>
+      </article>
+
+      <article class="victory-note">
+        <p><strong>Trophy Note:</strong> The RM guarantee includes evals and funded accounts. If the eval was purchased with code <strong>VICTORY</strong>, a blown funded account can qualify for a new eval.</p>
+      </article>
+
+      <article class="victory-card">
+        <h3>Valid Firms (Use Code: VISTORY)</h3>
+        <p class="victory-sub">These firms are approved for the guarantee program when purchased with the required code:</p>
+        <div class="victory-firms">
+          <div class="victory-firm">
+            <img class="victory-firm-logo" src="lucid-trading-logo.png" alt="Lucid Trading logo">
+            <div class="victory-firm-name">Lucid Trading</div>
+            <div class="victory-firm-code">Code: VISTORY</div>
+          </div>
+          <div class="victory-firm">
+            <img class="victory-firm-logo" src="apex-trader-funding-logo.png" alt="Apex Trader Funding logo">
+            <div class="victory-firm-name">Apex Trader Funding</div>
+            <div class="victory-firm-code">Code: VISTORY</div>
+          </div>
+          <div class="victory-firm">
+            <img class="victory-firm-logo" src="tradeify-logo.png" alt="Tradeify logo">
+            <div class="victory-firm-name">Tradeify</div>
+            <div class="victory-firm-code">Code: VISTORY</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="victory-card">
+        <h3>FAQ</h3>
+        <div class="victory-faq">
+          <h4>Am I allowed to add into a winning position larger than 5 micro contracts?</h4>
+          <p>
+            Yes, but manage the position properly and ensure that if you lose, your losing position is no larger than 5 micro contracts.
+            Stay compliant with the RM loss limit. Break-even management after scaling is recommended.
+          </p>
+        </div>
+
+        <div class="victory-faq">
+          <h4>I ended at a loss today that went $25 over the 15% DLL rule. Do I fail the program?</h4>
+          <p>
+            Small slippage overage may be reviewed with discretion. The 15% DLL is a hard rule for discipline,
+            so plan for volatility and slippage. Example: with a $2,000 drawdown, daily loss should not exceed $300.
+          </p>
+        </div>
+
+        <div class="victory-faq">
+          <h4>How does the daily loss limit work?</h4>
+          <p>
+            Daily loss limit is 15% of the account's maximum drawdown. If the account has a $2,000 loss limit,
+            daily loss cap for the program is $300.
+          </p>
+        </div>
+
+        <div class="victory-faq">
+          <h4>How do I claim the new account after losing an account while following the RM guarantee?</h4>
+          <p>
+            Open a support ticket and submit your account metrics so code usage and rule compliance can be verified.
+            Once validated, a new account of the same size and firm can be issued.
+          </p>
+        </div>
+      </article>
+    </section>
+  </div>
+</div><!-- /view-victory -->
+
+<script src="app.js"></script>
+</body>
+</html>
