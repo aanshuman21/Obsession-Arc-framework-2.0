@@ -180,6 +180,7 @@
     <button class="h1-tab"        id="h1nav-hours"  data-show-h1="hours" style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">🕐 Hours</button>
     <button class="h1-tab"        id="h1nav-stops"  data-show-h1="stops" style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">🛡 Stops</button>
     <button class="h1-tab"        id="h1nav-dol"    data-show-h1="dol"   style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">⏱ DOL</button>
+    <button class="h1-tab"        id="h1nav-reversal" data-show-h1="reversal" style="flex:1;border-radius:0;padding:11px 4px;font-size:10px;border:none;background:transparent;font-family:var(--font);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all 0.15s;border-bottom:2px solid transparent;">↩ Reversal</button>
   </div>
 
   <div class="container" style="max-width:860px;">
@@ -383,6 +384,79 @@
           <div class="h1-stat"><div class="label">Shorts below TDO</div><div class="val-md">72.2%</div></div>
         </div>
         <div style="font-size:11px;color:var(--text3);margin-top:10px;line-height:1.6;">Longs above TDO get +2% edge. Shorts are consistent regardless of TDO position.</div>
+      </div>
+    </div>
+
+    <!-- REVERSAL PAGE -->
+    <div class="h1-tab-panel" id="h1p-reversal">
+      <div style="text-align:center;padding:18px 0 6px;">
+        <div class="section-tag section-tag-inline"><img class="oa-logo-inline" src="oa-logo.png" alt="OA">Obsession Arc Framework · H1 Pattern</div>
+        <div style="font-size:11px;color:var(--text3);margin-top:4px;letter-spacing:0.5px;">Reversal Pattern Analysis · NQ Futures</div>
+      </div>
+
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:8px;">Reversal Pattern Analysis</div>
+        <div style="font-size:13px;color:var(--text2);line-height:1.8;">
+          <strong style="color:var(--text1);">Bullish Reversal:</strong> Low breaks previous low, closes above open, then next candle breaks high.
+          <br>
+          <strong style="color:var(--text1);">Bearish Reversal:</strong> High breaks previous high, closes below open, then next candle breaks low.
+        </div>
+      </div>
+
+      <div class="h1-card" style="margin-bottom:14px;">
+        <div class="label" style="margin-bottom:10px;">Overall Stats</div>
+        <div class="h1-stats-grid">
+          <div class="h1-stat">
+            <div class="label">Bullish Reversals</div>
+            <div class="val-md" style="color:var(--green);">72.9%</div>
+          </div>
+          <div class="h1-stat">
+            <div class="label">Bearish Reversals</div>
+            <div class="val-md" style="color:var(--amber);">67.6%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="h1-card">
+        <div class="label" style="margin-bottom:10px;">Breakdown by Hour (Sorted by NY Time)</div>
+        <div class="h1-reversal-table-wrap">
+          <table class="h1-reversal-table">
+            <thead>
+              <tr>
+                <th>NY Time</th>
+                <th>NY Entry</th>
+                <th>Bull %</th>
+                <th>Bear %</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>00:00</td><td>01:00</td><td>73.7%</td><td>75.4%</td></tr>
+              <tr><td>01:00</td><td>02:00</td><td>76.1%</td><td>75.9%</td></tr>
+              <tr><td>02:00</td><td>03:00</td><td>74.0%</td><td>77.9%</td></tr>
+              <tr><td>03:00</td><td>04:00</td><td>62.8%</td><td>61.7%</td></tr>
+              <tr><td>04:00</td><td>05:00</td><td>70.5%</td><td>47.8%</td></tr>
+              <tr><td>05:00</td><td>06:00</td><td>73.3%</td><td>60.2%</td></tr>
+              <tr><td>06:00</td><td>07:00</td><td>72.2%</td><td>76.5%</td></tr>
+              <tr><td>07:00</td><td>08:00</td><td>88.7%</td><td>79.5%</td></tr>
+              <tr><td>08:00</td><td>09:00</td><td>83.5%</td><td>77.6%</td></tr>
+              <tr><td>09:00</td><td>10:00</td><td>74.5%</td><td>71.0%</td></tr>
+              <tr><td>10:00</td><td>11:00</td><td>69.2%</td><td>57.5%</td></tr>
+              <tr><td>11:00</td><td>12:00</td><td>70.4%</td><td>68.5%</td></tr>
+              <tr><td>12:00</td><td>13:00</td><td>81.1%</td><td>69.8%</td></tr>
+              <tr><td>13:00</td><td>14:00</td><td>74.0%</td><td>66.4%</td></tr>
+              <tr><td>14:00</td><td>15:00</td><td>76.0%</td><td>72.3%</td></tr>
+              <tr><td>15:00</td><td>16:00</td><td>51.9%</td><td>47.2%</td></tr>
+              <tr><td>16:00</td><td>17:00</td><td>64.9%</td><td>66.2%</td></tr>
+              <tr><td>17:00</td><td>18:00</td><td>N/A</td><td>N/A</td></tr>
+              <tr><td>18:00</td><td>19:00</td><td>61.5%</td><td>55.8%</td></tr>
+              <tr><td>19:00</td><td>20:00</td><td>76.8%</td><td>77.5%</td></tr>
+              <tr><td>20:00</td><td>21:00</td><td>75.0%</td><td>67.2%</td></tr>
+              <tr><td>21:00</td><td>22:00</td><td>72.7%</td><td>63.3%</td></tr>
+              <tr><td>22:00</td><td>23:00</td><td>69.0%</td><td>59.0%</td></tr>
+              <tr><td>23:00</td><td>00:00</td><td>81.5%</td><td>74.3%</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -1075,23 +1149,23 @@
       </article>
 
       <article class="victory-card">
-        <h3>Valid Firms (Use Code: VISTORY)</h3>
+        <h3>Valid Firms (Use Code: VICTORY)</h3>
         <p class="victory-sub">These firms are approved for the guarantee program when purchased with the required code:</p>
         <div class="victory-firms">
           <div class="victory-firm">
             <img class="victory-firm-logo" src="lucid-trading-logo.png" alt="Lucid Trading logo">
             <div class="victory-firm-name">Lucid Trading</div>
-            <div class="victory-firm-code">Code: VISTORY</div>
+            <div class="victory-firm-code">Code: VICTORY</div>
           </div>
           <div class="victory-firm">
             <img class="victory-firm-logo" src="apex-trader-funding-logo.png" alt="Apex Trader Funding logo">
             <div class="victory-firm-name">Apex Trader Funding</div>
-            <div class="victory-firm-code">Code: VISTORY</div>
+            <div class="victory-firm-code">Code: VICTORY</div>
           </div>
           <div class="victory-firm">
             <img class="victory-firm-logo" src="tradeify-logo.png" alt="Tradeify logo">
             <div class="victory-firm-name">Tradeify</div>
-            <div class="victory-firm-code">Code: VISTORY</div>
+            <div class="victory-firm-code">Code: VICTORY</div>
           </div>
         </div>
       </article>
